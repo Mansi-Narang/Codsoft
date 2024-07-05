@@ -19,7 +19,9 @@
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-twitter"></i></a>
             <a href="mailto:random@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            <button class="btn">Get Started</button>
+            <form action="#cards">
+                <button class="btn">Get Started</button>
+            </form>
         </div>
     </nav>
     <section id="home">
@@ -144,7 +146,7 @@
         <div class="email_form">
             <h2 class="heading">Stay in the Loop</h2>
             <p class="notification">Get notified when our next Collection drops!</p>
-            <form action="#">
+            <form class="signup" action="#">
                 <label for="email">Email Address</label>
                 <br/>
                 <input placeholder="xyz@example.com" id="email" type="email" required/>
@@ -154,6 +156,12 @@
         </div>
     </section>
     <footer>Made  By  Mansi &#9829;</footer>
-    <script></script>
+    <script>
+        const form= document.querySelector(".signup");
+        form.addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Thank you for subscribing! We'll notify you when our next collection drops! :)");
+        })
+    </script>
 </body>
 </html>
