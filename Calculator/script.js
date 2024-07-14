@@ -9,11 +9,23 @@ for (button of buttons){
         if(value=="="){
             string=eval(string);
             console.log(string);
+            if(string==undefined){
+            alert("Please provide a valid expression");
+            string="";
+            }
             input.value=string;
             string="";
         }
         else if(value=="C"){
             string="";
+            input.value=string;
+        }
+        else if (isOperator(value)){
+            if (isOperator(string[string.length-1])){
+                string=string.slice(0,length-1)+value;
+            }else{
+                string+=value;
+            }
             input.value=string;
         }
         else if(value=="erase"){
@@ -26,4 +38,8 @@ for (button of buttons){
         input.value=string;
     }
 })}
+
+function isOperator(char){
+    return char == "+" || char == "-" || char == "*" || char == "/" || char == "%";
+}
 
