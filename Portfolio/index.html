@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class=" bg-sky-700 text-white">
+    <section id="home">
+        <nav class="flex justify-between p-2 text-xl font-semibold bg-sky-900 h-16 items-center sticky">
+            <div class="resume pl-4"><a href="#" class="font-bold ">Mansi Narang</a></div>
+            <div class="nav-icons ">
+                <a href="#home" class="pr-3">Home</a>
+                <a href="#about" class="pr-3">About</a>
+                <a href="#skills" class="pr-3">Skills</a>
+                <a href="#project" class="pr-3">Project</a>
+                <a href="#contact" class="pr-3">Contact</a>
+            </div>
+        </nav>
+        <div class="flex">
+            <div class="mt-40 mx-28">
+                <h2 class="text-3xl font-semibold">Hello, It's Me</h2>
+                <h1 class="text-5xl font-bold py-2 ">Mansi Narang</h1>
+                <h2 class="text-3xl font-semibold mb-8">And I'm a 
+                <span id="element"></span> 
+                </h2>
+                <p class="text-xl">Passionate and innovative Web Developer specializing in Frontend Development. <br/>Dedicated to delivering creative solutions and high-quality results in every project.</p>
+                <div>
+                    <i class="fa-brands fa-linkedin-in p-2 mx-4 my-8 rounded-full text-blue-600 bg-white text-3xl"></i>
+                    <i class="fa-brands fa-github  p-2 mx-4 my-8 rounded-full text-black bg-white text-3xl"></i>
+                </div>
+                <div>
+                    <a href="#Contact" class="text-xl mr-4 bg-white text-slate-900 font-bold p-2 rounded-md">Contact Me</a>
+                    <a href="#" class="text-xl bg-white text-slate-900 font-bold p-2 rounded-md"><i class="fa-solid fa-file"></i> Resume</a>
+                </div>
+            </div>
+            <picture class=" mt-16"><img class="h-98" src="woman.svg" alt="coder"/></picture>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <section id="about" class="mt-40 mb-12">
+        <h2 class="text-center text-5xl font-bold text-white">About Me</h2>
+        <h3 class="text-center text-2xl my-8 text-slate-950 font-bold underline">Full Stack Developer!</h3>
+        <p class="px-32 py-4 text-2xl font-semibold">I am a Computer Science Grad Student at Chandigarh University. I enjoy making captivating websites and do problem solving. Always strive to bring 100% to the work I do. I have worked on technologies like HTML5, CSS, Javascript, C++, MongoDB, MySQL, Python. And have experience working with backend technologies like Node.js, Express. My goal is to develop seamless and efficient web applications that deliver an outstanding user experience. </p>
+        <p class="px-32 text-2xl pt-4"> <span class="font-semibold text-slate-950">Languages : </span>Python, JavaScript, C, C++, HTML/CSS</p>
+        <p class="px-32 text-2xl pt-2"> <span class="font-semibold text-slate-950">Databases : </span> MySQL, MongoDB </p>
+        <p class="px-32 text-2xl pt-2"> <span class="font-semibold text-slate-950">Libraries : </span> React, EJS, Numpy, Pandas, Matplotlib </p>
+        <p class="px-32 text-2xl pt-2"> <span class="font-semibold text-slate-950">Frameworks : </span> Node.js, Express, Bootstrap, Tailwind</p>
+        <p class="px-32 text-2xl pt-2"> <span class="font-semibold text-slate-950">Tools & Technologies : </span> Git/Github, Bash, Terminal, Cmd</p>
+        <p class="py-4 px-32 text-2xl">Looking for an opportunity where I get to work in a challenging position to use and expand my skills in Web Development, which provides interesting experiences and personal growth.</p>
+    </section>
+    <section id="skills">
+        
+    </section>
+    <section id="project">
+        
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i class="font-bold text-slate-950">Frontend Developer.</i>', '<i class="font-bold text-slate-950">Backend Developer.</i>', '<i class="font-bold text-slate-950">Student.</i>'],
+          typeSpeed: 80,
+        });
+      </script>
+</body>
+</html>
